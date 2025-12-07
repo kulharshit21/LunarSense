@@ -1,0 +1,5 @@
+Model,Type,Accuracy,Precision,Recall,F1-Score,ROC-AUC
+ChaSTE (RF),Single Modality,0.8182,0.8125,0.5417,0.65,0.75
+ILSA (RF),Single Modality,0.7134,0.3014,0.3284,0.3143,0.5649
+Fusion (XGB),Multimodal,0.6753,0.6552,0.5588,0.6032,0.7476
+Fusion (DL),Multimodal,0.4416,0.4416,1.0,0.6126,0.6108

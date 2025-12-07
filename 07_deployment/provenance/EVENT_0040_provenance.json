@@ -1,0 +1,35 @@
+{
+  "event_id": "EVENT_0040",
+  "timestamp": "2023-01-02T16:00:00",
+  "processing_timestamp": "2025-10-30T23:19:39.126935",
+  "data_sources": {
+    "thermal": {
+      "instrument": "ChaSTE",
+      "file": "chaste_40.h5",
+      "processing_level": "L1B",
+      "quality_flag": 3
+    },
+    "seismic": {
+      "instrument": "ILSA",
+      "file": "ilsa_40.h5",
+      "processing_level": "L1B",
+      "quality_flag": 3
+    }
+  },
+  "model_info": {
+    "model_name": "XGBoost Fusion",
+    "model_version": "1.0",
+    "model_path": "fusion_baseline_xgb.pkl"
+  },
+  "predictions": {
+    "event": 0,
+    "confidence": 0.11129799485206604,
+    "uncertainty": 0.7774040102958679
+  },
+  "metadata": {
+    "mission": "Chandrayaan-3",
+    "rover": "Pragyan",
+    "location_uncertainty_m": 5.0,
+    "temporal_resolution_s": 3600
+  }
+}

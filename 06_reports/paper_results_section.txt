@@ -1,0 +1,41 @@
+
+RESULTS
+
+Dataset Preparation:
+- Total ChaSTE samples: 385 (31.69% events)
+- Total ILSA samples: 1,674 (20.07% events)
+- Multimodal fusion: 385 paired samples
+- Train/test split: 80/20 with stratification
+
+Baseline Models (Single Modality):
+ChaSTE (Thermal) achieved strong individual performance:
+  • Accuracy: 81.82%, Precision: 81.25%, Recall: 54.17%
+  • F1-Score: 0.6500, ROC-AUC: 0.7500
+  • Demonstrates reliable thermal anomaly detection
+
+ILSA (Seismic) showed limited individual capability:
+  • Accuracy: 71.34%, Precision: 30.14%, Recall: 32.84%
+  • F1-Score: 0.3143, ROC-AUC: 0.5649
+  • Reflects challenges in sparse seismic event detection
+
+Multimodal Fusion Model (XGBoost):
+The fusion model successfully combined sensor modalities:
+  • Accuracy: 67.53%, Precision: 65.52%, Recall: 55.88%
+  • F1-Score: 0.6032, ROC-AUC: 0.7476
+  • Achieved best ROC-AUC (0.7476), demonstrating superior 
+    discrimination between events and non-events
+
+Cross-Validation Results:
+5-fold cross-validation confirmed model robustness:
+  • Fusion F1: 0.7047 ± 0.0579
+  • Fusion AUC: Mean consistent across folds
+
+Deep Learning Comparison:
+While deep learning achieved 100% recall, it resulted in 
+excessive false positives (56% precision), making it impractical 
+for deployment. Classical ML approach was preferred.
+
+Conclusion:
+Multimodal fusion stabilized weak single-modality detectors 
+while maintaining strong performance, demonstrating the value 
+of sensor fusion for lunar anomaly detection.

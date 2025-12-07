@@ -1,0 +1,73 @@
+{
+  "model_details": {
+    "name": "ChaSTE Thermal Anomaly Detector",
+    "version": "1.0.0",
+    "release_date": "2025-10-30",
+    "architecture": "Random Forest (150 estimators)",
+    "framework": "scikit-learn",
+    "input_shape": [
+      null,
+      6
+    ],
+    "output_shape": [
+      null,
+      2
+    ]
+  },
+  "intended_use": {
+    "primary_use": "Detect thermal anomalies in Chandrayaan-3 ChaSTE telemetry",
+    "domain": "Lunar exploration, thermal anomaly detection",
+    "tasks": [
+      "Binary classification",
+      "Anomaly scoring"
+    ],
+    "out_of_scope": [
+      "Real-time high-frequency monitoring (>1 Hz)",
+      "Temperature prediction/forecasting",
+      "Multi-class anomaly type classification"
+    ]
+  },
+  "factors": {
+    "relevant_factors": [
+      "Time of day (LST)",
+      "Surface type",
+      "Crater proximity"
+    ],
+    "evaluation_factors": [
+      "Data quality (QC flags)",
+      "Seasonal variations"
+    ],
+    "limitations": [
+      "Trained on limited geographic region (south pole)",
+      "Requires pre-processed standardized input",
+      "Best performance in clear conditions"
+    ]
+  },
+  "metrics": {
+    "test_accuracy": 0.8182,
+    "test_precision": 0.8125,
+    "test_recall": 0.5417,
+    "test_f1": 0.65,
+    "test_roc_auc": 0.75,
+    "cv_f1_mean": 0.7071,
+    "cv_f1_std": 0.0871
+  },
+  "training_data": {
+    "dataset": "Chandrayaan-3 ChaSTE L1B Products",
+    "samples": 385,
+    "features": 6,
+    "time_coverage": "2023-01-01 to 2023-02-15",
+    "preprocessing": "StandardScaler normalization, outlier removal"
+  },
+  "model_artifacts": {
+    "checkpoint": "chaste_baseline_rf.pkl",
+    "scaler": "feature_scalers.pkl (chaste)",
+    "config": "chaste_baseline_config.json"
+  },
+  "ethical_considerations": {
+    "safety": "Non-safety-critical for this use case",
+    "bias": "May be biased toward south pole conditions",
+    "fairness": "N/A for physical sensor data"
+  },
+  "model_card_contact": "research@lunarsense.org"
+}

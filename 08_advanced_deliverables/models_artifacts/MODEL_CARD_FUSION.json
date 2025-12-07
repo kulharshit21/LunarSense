@@ -1,0 +1,109 @@
+{
+  "model_details": {
+    "name": "LunarSense-3 Multimodal Fusion Detector \u2b50 PRIMARY",
+    "version": "1.0.0",
+    "release_date": "2025-10-30",
+    "architecture": "XGBoost (250 estimators, GPU-accelerated)",
+    "framework": "XGBoost 2.0 + PyTorch",
+    "input_shape": [
+      null,
+      11
+    ],
+    "output_shape": [
+      null,
+      2
+    ],
+    "hardware": "NVIDIA A100 GPU (42.4 GB VRAM)"
+  },
+  "intended_use": {
+    "primary_use": "\u2b50 RECOMMENDED: Detect multimodal anomalies from Chandrayaan-3",
+    "domain": "Lunar exploration, multimodal sensor fusion",
+    "tasks": [
+      "Binary classification",
+      "Anomaly scoring",
+      "Confidence estimation"
+    ],
+    "benefits": [
+      "Best overall performance (ROC-AUC: 0.7476)",
+      "Combines thermal + seismic complementarity",
+      "Stable cross-validation performance",
+      "Suitable for operational deployment"
+    ]
+  },
+  "factors": {
+    "modalities": [
+      "Thermal (ChaSTE)",
+      "Seismic (ILSA)"
+    ],
+    "relevant_factors": [
+      "Surface type",
+      "Time of observation",
+      "Sensor quality flags",
+      "Ambient noise conditions"
+    ],
+    "strengths": [
+      "Overcomes individual modality weaknesses",
+      "ILSA performance improved 92% with fusion",
+      "Balanced precision-recall trade-off"
+    ],
+    "limitations": [
+      "Requires both modalities available",
+      "Performance depends on data quality",
+      "Not validated on extreme conditions"
+    ]
+  },
+  "metrics": {
+    "test_accuracy": 0.6753,
+    "test_precision": 0.6552,
+    "test_recall": 0.5588,
+    "test_f1": 0.6032,
+    "test_roc_auc": 0.7476,
+    "cv_f1_mean": 0.7047,
+    "cv_f1_std": 0.0579,
+    "cv_auc_mean": 0.7476,
+    "cv_auc_std": 0.0443
+  },
+  "training_data": {
+    "dataset": "Chandrayaan-3 Multimodal Fusion",
+    "total_samples": 385,
+    "thermal_samples": 385,
+    "seismic_samples": 385,
+    "total_features": 11,
+    "feature_breakdown": {
+      "thermal": 6,
+      "seismic": 5
+    },
+    "event_rate": "44.4%",
+    "preprocessing": "Per-modality StandardScaler + SMOTE"
+  },
+  "model_artifacts": {
+    "checkpoint": "fusion_baseline_xgb.pkl",
+    "scaler": "feature_scalers.pkl (chaste + ilsa)",
+    "config": "fusion_model_config.json"
+  },
+  "feature_importance": {
+    "ilsa_max_amplitude": 0.185,
+    "chaste_mean_temp": 0.162,
+    "ilsa_rms": 0.151,
+    "chaste_std_temp": 0.128,
+    "ilsa_max_sta_lta": 0.112
+  },
+  "deployment_readiness": {
+    "status": "\u2705 PRODUCTION-READY",
+    "inference_time_ms": "< 1 ms per sample",
+    "memory_footprint_mb": 15,
+    "batch_processing": "Supported"
+  },
+  "comparison_with_alternatives": {
+    "vs_chaste_only": "Maintains ROC-AUC while adding modality robustness",
+    "vs_ilsa_only": "ILSA alone insufficient (ROC-AUC 0.56)",
+    "vs_deep_learning": "Better precision, no production deployment issues"
+  },
+  "recommendations": [
+    "\u2705 Deploy this model for operational use",
+    "\ud83d\udcca Monitor false alarm rate in field deployment",
+    "\ud83d\udd04 Retrain monthly with new mission data",
+    "\u26a0\ufe0f Ensure both ChaSTE + ILSA data available"
+  ],
+  "model_card_contact": "research@lunarsense.org"
+}

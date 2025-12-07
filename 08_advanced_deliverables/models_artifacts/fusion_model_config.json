@@ -1,0 +1,73 @@
+{
+  "model_name": "LunarSense-3 Fusion Detector",
+  "model_type": "XGBoost",
+  "framework": "XGBoost 2.0",
+  "architecture": {
+    "n_estimators": 250,
+    "learning_rate": 0.03,
+    "max_depth": 8,
+    "subsample": 0.7,
+    "colsample_bytree": 0.8,
+    "scale_pos_weight": 2.5,
+    "random_state": 42,
+    "gpu_enabled": true,
+    "device": "cuda:0"
+  },
+  "input_features": 11,
+  "input_feature_names": [
+    "chaste_mean_temp",
+    "chaste_std_temp",
+    "chaste_min_temp",
+    "chaste_max_temp",
+    "chaste_drift_rate",
+    "chaste_qc_flag",
+    "ilsa_n_events",
+    "ilsa_max_amplitude",
+    "ilsa_rms",
+    "ilsa_max_sta_lta",
+    "ilsa_qc_flag"
+  ],
+  "feature_modalities": {
+    "thermal": 6,
+    "seismic": 5
+  },
+  "output_classes": 2,
+  "output_labels": [
+    "No_Anomaly",
+    "Anomaly"
+  ],
+  "preprocessing": {
+    "scaler": "StandardScaler (per modality)",
+    "balancing": "SMOTE",
+    "class_weights": "Computed from data"
+  },
+  "training_data_size": 308,
+  "validation_data_size": 77,
+  "cross_validation": {
+    "method": "5-fold stratified",
+    "cv_f1_mean": 0.7047,
+    "cv_f1_std": 0.0579,
+    "cv_auc_mean": 0.7476,
+    "cv_auc_std": 0.0443
+  },
+  "performance_metrics": {
+    "accuracy": 0.6753,
+    "precision": 0.6552,
+    "recall": 0.5588,
+    "f1_score": 0.6032,
+    "roc_auc": 0.7476,
+    "confusion_matrix": {
+      "tn": 36,
+      "fp": 7,
+      "fn": 12,
+      "tp": 20
+    }
+  },
+  "feature_importance": {
+    "ilsa_max_amplitude": 0.185,
+    "chaste_mean_temp": 0.162,
+    "ilsa_rms": 0.151,
+    "chaste_std_temp": 0.128,
+    "ilsa_max_sta_lta": 0.112
+  }
+}

@@ -1,0 +1,30 @@
+
+📊 MODEL PERFORMANCE COMPARISON:
+
+┌─────────────────────────────────────────────────────────┐
+│ Metric          │ ChaSTE  │ ILSA    │ Fusion  │ Winner  │
+├─────────────────────────────────────────────────────────┤
+│ Accuracy        │ 81.82%  │ 71.34%  │ 67.53%  │ ChaSTE  │
+│ Precision       │ 81.25%  │ 30.14%  │ 65.52%  │ ChaSTE  │
+│ Recall          │ 54.17%  │ 32.84%  │ 55.88%  │ Fusion  │
+│ F1-Score        │ 0.6500  │ 0.3143  │ 0.6032  │ ChaSTE  │
+│ ROC-AUC         │ 0.7500  │ 0.5649  │ 0.7476  │ ChaSTE  │
+│ CV Stability    │ ±0.087  │ ±0.053  │ ±0.058  │ ILSA    │
+├─────────────────────────────────────────────────────────┤
+│ RECOMMENDATION  │ Baseline│ Ref Only│ ⭐BEST  │ FUSION  │
+└─────────────────────────────────────────────────────────┘
+
+🎯 DEPLOYMENT DECISION:
+✅ Deploy: Fusion Model (XGBoost)
+   • Best ROC-AUC balance
+   • Stable cross-validation
+   • Suitable for operations
+   • Overcomes individual limitations
+
+⚠️ Reference: ChaSTE Baseline
+   • High precision for false alarm avoidance
+   • Use for secondary verification
+
+❌ Not Recommended Standalone: ILSA
+   • Poor individual performance
+   • Only use with fusion

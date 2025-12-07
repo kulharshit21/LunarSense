@@ -1,0 +1,74 @@
+{
+  "dataset_name": "LunarSense-3 Chandrayaan-3 Sensor Fusion",
+  "dataset_id": "chandrayaan3_lunarsense_v1.0",
+  "version": "1.0.0",
+  "release_date": "2025-10-30",
+  "overview": {
+    "description": "Multimodal sensor data from Chandrayaan-3 ChaSTE & ILSA instruments",
+    "intended_use": "Training and evaluation of lunar anomaly detection models",
+    "creator": "ISRO Chandrayaan-3 Mission",
+    "license": "CC-BY-4.0",
+    "access": "Restricted to research partners"
+  },
+  "dataset_composition": {
+    "total_samples": 2059,
+    "modalities": {
+      "thermal": {
+        "instrument": "ChaSTE",
+        "samples": 385,
+        "event_rate_percent": 31.69,
+        "features": 6
+      },
+      "seismic": {
+        "instrument": "ILSA",
+        "samples": 1674,
+        "event_rate_percent": 20.07,
+        "features": 5
+      }
+    },
+    "total_features": 11,
+    "time_coverage": "Chandrayaan-3 operational phase",
+    "spatial_coverage": "Lunar south pole region"
+  },
+  "data_statistics": {
+    "missing_data_percent": 0.5,
+    "outliers_removed": "3-sigma clipping",
+    "normalization": "StandardScaler (zero-mean, unit-variance)",
+    "class_distribution": {
+      "events": {
+        "thermal": 122,
+        "seismic": 336,
+        "fusion": 171
+      },
+      "non_events": {
+        "thermal": 263,
+        "seismic": 1338,
+        "fusion": 214
+      }
+    }
+  },
+  "quality_metrics": {
+    "data_completeness": 0.995,
+    "qc_flag_distribution": "98.5% OK, 1.5% flagged",
+    "temporal_resolution_seconds": 3600
+  },
+  "privacy_and_security": {
+    "personally_identifiable_information": "None",
+    "sensitive_content": "None",
+    "data_classification": "Unclassified"
+  },
+  "recommended_uses": [
+    "Training anomaly detection models",
+    "Cross-modality fusion research",
+    "Sensor comparison studies",
+    "Lunar science applications"
+  ],
+  "not_recommended_uses": [
+    "Commercial real-time operations",
+    "Standalone single-modality deployment",
+    "High-precision navigation"
+  ],
+  "data_card_contact": "data@lunarsense.org",
+  "data_card_version": "1.0",
+  "data_card_last_updated": "2025-10-30T23:19:48.985703"
+}

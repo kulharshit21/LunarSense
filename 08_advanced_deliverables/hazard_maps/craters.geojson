@@ -1,0 +1,805 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.44495265322858,
+          -89.25212994765722
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0000",
+        "diameter_m": 283.13171224697845,
+        "depth_m": 89.05974222569475,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.00894449465224,
+          -88.7332919186813
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0001",
+        "diameter_m": 166.39191052202935,
+        "depth_m": 94.65224448124282,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.30727661806637,
+          -89.55669065012577
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0002",
+        "diameter_m": 489.52784555370874,
+        "depth_m": 5.484217755407618,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.51418728761541,
+          -89.27996208356984
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0003",
+        "diameter_m": 375.22164127313283,
+        "depth_m": 90.61726742946409,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.153235717008272,
+          -89.1543907390191
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0004",
+        "diameter_m": 487.08894211764806,
+        "depth_m": 8.908779129881726,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.07860830505905,
+          -89.95362797641394
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0005",
+        "diameter_m": 422.06159200099444,
+        "depth_m": 74.88972991808349,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.766631403667105,
+          -89.36750311636945
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0006",
+        "diameter_m": 197.39319164045014,
+        "depth_m": 91.4503685922155,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          63.68062197197676,
+          -89.44017286060777
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0007",
+        "diameter_m": 80.34494956311538,
+        "depth_m": 13.017010267628653,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.88526697918013,
+          -89.55871832048648
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0008",
+        "diameter_m": 190.70555154847327,
+        "depth_m": 17.412594836643667,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0161198277199,
+          -89.910346571693
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0009",
+        "diameter_m": 406.61704347106104,
+        "depth_m": 52.50421209440923,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.47552203960277,
+          -89.32942724765627
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0010",
+        "diameter_m": 40.40333103702803,
+        "depth_m": 71.23999227569263,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.22364040742498,
+          -88.80489342820941
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0011",
+        "diameter_m": 48.77013626759844,
+        "depth_m": 94.98414269653128,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.64428889172336,
+          -89.31267087735205
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0012",
+        "diameter_m": 152.65789806489096,
+        "depth_m": 71.31389922973132,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.615706767279306,
+          -89.8440995008073
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0013",
+        "diameter_m": 488.71806568577495,
+        "depth_m": 6.666964564352994,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.74675725737788,
+          -88.03425570169406
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0014",
+        "diameter_m": 423.7318296948886,
+        "depth_m": 42.16199051519965,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.0213417513765,
+          -88.24759391791703
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0015",
+        "diameter_m": 303.25485103019224,
+        "depth_m": 13.823086548667487,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.49474059355802,
+          -88.48778419931334
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0016",
+        "diameter_m": 444.5637664018828,
+        "depth_m": 59.31264245407362,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.57994939723972,
+          -88.56525821325862
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0017",
+        "diameter_m": 422.01402017497526,
+        "depth_m": 78.81650193289741,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -126.81147284128879,
+          -88.56428708303014
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0018",
+        "diameter_m": 149.7116944598139,
+        "depth_m": 88.22701954983532,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.3045884265002,
+          -89.16815612394115
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0019",
+        "diameter_m": 278.98525992285334,
+        "depth_m": 28.297894356917695,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.88008405563258,
+          -88.61202343148167
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0020",
+        "diameter_m": 278.89853174326714,
+        "depth_m": 40.70569512805796,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46239516502311,
+          -88.65253699354363
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0021",
+        "diameter_m": 99.03418889791962,
+        "depth_m": 11.91568617521105,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -168.289324349041,
+          -89.2157117606713
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0022",
+        "diameter_m": 185.95748249893362,
+        "depth_m": 84.98933672858904,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.5320805511459,
+          -88.29399314117678
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0023",
+        "diameter_m": 38.56801316378384,
+        "depth_m": 18.250723822165938,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.879284010386982,
+          -88.78807838501841
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0024",
+        "diameter_m": 401.4338477756156,
+        "depth_m": 75.3501793188358,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          165.70594471720733,
+          -89.51862413653909
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0025",
+        "diameter_m": 212.565628711821,
+        "depth_m": 73.00368955812982,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -177.0478650695802,
+          -88.77208469486398
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0026",
+        "diameter_m": 362.46818146245954,
+        "depth_m": 56.313927736201556,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.75141511676566,
+          -88.13850346923638
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0027",
+        "diameter_m": 355.4262000565883,
+        "depth_m": 65.61581093575143,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.155713657155445,
+          -88.823424232329
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0028",
+        "diameter_m": 290.0452732890206,
+        "depth_m": 56.366543290894974,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -168.33129751706085,
+          -88.36145004783896
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0029",
+        "diameter_m": 338.7866420440116,
+        "depth_m": 24.137155204532476,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -160.63159604501152,
+          -88.83100547204266
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0030",
+        "diameter_m": 446.14754734290864,
+        "depth_m": 31.2480785320008,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.94177450665376,
+          -89.95019245564282
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0031",
+        "diameter_m": 390.412385561164,
+        "depth_m": 62.784873155202895,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.01840987796581,
+          -88.87773388728215
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0032",
+        "diameter_m": 489.94609599756666,
+        "depth_m": 31.92226822814059,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.029589323989455,
+          -89.47617504352328
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0033",
+        "diameter_m": 296.1477321407129,
+        "depth_m": 14.35009866833591,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.66670949054497,
+          -89.63008082519532
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0034",
+        "diameter_m": 68.4291589557483,
+        "depth_m": 58.31271368483265,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -177.09368586557656,
+          -89.58094119675496
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0035",
+        "diameter_m": 390.59011731291844,
+        "depth_m": 81.74434425119668,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -143.8225760720465,
+          -89.10776384146067
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0036",
+        "diameter_m": 199.8000420481469,
+        "depth_m": 1.6831248121883915,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.63323470041948,
+          -89.75685395967851
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0037",
+        "diameter_m": 336.9314569605593,
+        "depth_m": 25.800129175871476,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.6285050803283,
+          -88.14851631044648
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0038",
+        "diameter_m": 49.862662634272446,
+        "depth_m": 34.612686560911605,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.05206072875683,
+          -89.97225386370947
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0039",
+        "diameter_m": 445.86967471016635,
+        "depth_m": 18.40534386878558,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.87531240605392,
+          -88.64038142831008
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0040",
+        "diameter_m": 382.9245307303699,
+        "depth_m": 36.96978323807483,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.113502522367327,
+          -88.84402277727446
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0041",
+        "diameter_m": 112.04994238200534,
+        "depth_m": 14.979820618467873,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.19668854501998,
+          -88.22840362423598
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0042",
+        "diameter_m": 36.46109313274662,
+        "depth_m": 50.03038101169291,
+        "degradation": "Fresh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.29342432242834,
+          -89.09673049530738
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0043",
+        "diameter_m": 299.7368545538764,
+        "depth_m": 96.15890773346125,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.492287780072559,
+          -89.25394316601265
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0044",
+        "diameter_m": 345.6375308157611,
+        "depth_m": 86.21367764182634,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.405525381035346,
+          -88.4398745153081
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0045",
+        "diameter_m": 219.02956314110804,
+        "depth_m": 97.4655833837554,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -159.76801632131676,
+          -88.80642699686717
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0046",
+        "diameter_m": 430.20361435760987,
+        "depth_m": 80.90152345534803,
+        "degradation": "Highly_Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.00447902855393,
+          -89.4133055246828
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0047",
+        "diameter_m": 439.17379246475275,
+        "depth_m": 80.05068528475239,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.18306791936429,
+          -89.40784576490488
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0048",
+        "diameter_m": 229.67064473727385,
+        "depth_m": 74.92094036348094,
+        "degradation": "Degraded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.70814683359782,
+          -89.12289323702338
+        ]
+      },
+      "properties": {
+        "crater_id": "CRATER_0049",
+        "diameter_m": 202.6638143533418,
+        "depth_m": 49.295513802036496,
+        "degradation": "Fresh"
+      }
+    }
+  ]
+}

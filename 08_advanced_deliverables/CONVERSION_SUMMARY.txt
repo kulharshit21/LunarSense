@@ -1,0 +1,31 @@
+
+📊 IMAGE CONVERSION STATISTICS:
+
+┌─────────────────────────────────────────────────────────────┐
+│ Source GeoTIFF          │ JPEG Format      │ PNG Format      │
+├─────────────────────────────────────────────────────────────┤
+│ terrain_hazard_...tif   │ ✅ Generated     │ ✅ Generated    │
+│ slope_maps.tif          │ ✅ Generated     │ ✅ Generated    │
+│ traversability_...tif   │ ✅ Generated     │ ✅ Generated    │
+└─────────────────────────────────────────────────────────────┘
+
+📂 Output Directory: {image_output_dir}
+
+✨ Formats Generated:
+   • JPEG (150 DPI) - Web-friendly, smaller file size
+   • PNG (150 DPI) - Lossless, better for publication
+
+🎨 Color Schemes:
+   • Hazard maps: RdYlGn_r (Green=Safe → Red=Impassable)
+   • Slope maps: viridis, hsv, plasma
+   • Traversability: RdYlGn_r
+
+💾 Benefits:
+   ✅ Easier to share and view
+   ✅ Compatible with web browsers
+   ✅ Suitable for presentations
+   ✅ Smaller file sizes than GeoTIFF
+   ✅ Preserved for publication
+
+🔄 Batch Processing:
+   Use convert_all_tifs.py for future GeoTIFF conversions

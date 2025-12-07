@@ -1,0 +1,54 @@
+{
+  "pipeline": {
+    "name": "LunarSense-3",
+    "version": "1.0",
+    "timestamp": "2025-10-30T21:56:54.641848",
+    "stage": "Data Ingestion & SPICE Alignment"
+  },
+  "mission": {
+    "name": "Chandrayaan-3",
+    "archive": "PDS4",
+    "data_source": "ISRO Mission Archive"
+  },
+  "dataset": {
+    "root_path": "/raid/home/srmist57/Chandrayan-3/Dataset",
+    "processing_mode": "FULL_DATASET",
+    "total_files": 6537,
+    "total_size_gb": 36.08,
+    "instruments": [
+      "LIBS",
+      "ChaSTE",
+      "ILSA",
+      "RAMBHA",
+      "APXS",
+      "IMAGERY",
+      "SPICE"
+    ]
+  },
+  "hardware": {
+    "gpu": "cuda:0",
+    "workers": 32,
+    "batch_size": 64
+  },
+  "spice": {
+    "available": true,
+    "kernels_found": 9
+  },
+  "configuration": {
+    "dataset_root": "/raid/home/srmist57/Chandrayan-3/Dataset",
+    "output_root": "/raid/home/srmist57/Chandrayan-3/LunarSense3_FullPipeline",
+    "process_all_data": true,
+    "processing_rate_hz": 1,
+    "grid_resolution_m": 10,
+    "track_extent_m": 500,
+    "gpu_id": 0,
+    "n_workers": 32,
+    "batch_size": 64,
+    "qc_flags": {
+      "0": "OK",
+      "1": "MISSING",
+      "2": "HIGH_NOISE",
+      "3": "SATURATED"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model_name": "ChaSTE Baseline Detector",
+  "model_type": "RandomForest",
+  "framework": "scikit-learn",
+  "architecture": {
+    "n_estimators": 150,
+    "max_depth": 12,
+    "min_samples_split": 3,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "input_features": 6,
+  "input_feature_names": [
+    "mean_temp",
+    "std_temp",
+    "min_temp",
+    "max_temp",
+    "drift_rate",
+    "qc_flag"
+  ],
+  "output_classes": 2,
+  "output_labels": [
+    "No_Anomaly",
+    "Anomaly"
+  ],
+  "preprocessing": {
+    "scaler": "StandardScaler",
+    "outlier_removal": "3-sigma clipping",
+    "missing_data": "forward-fill"
+  },
+  "training_data_size": 308,
+  "validation_data_size": 77,
+  "performance_metrics": {
+    "accuracy": 0.8182,
+    "precision": 0.8125,
+    "recall": 0.5417,
+    "f1_score": 0.65,
+    "roc_auc": 0.75
+  }
+}

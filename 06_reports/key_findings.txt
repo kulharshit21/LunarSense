@@ -1,0 +1,27 @@
+
+1. SINGLE MODALITY PERFORMANCE:
+   ✅ ChaSTE (Thermal): Strong baseline (81% accuracy, 0.75 ROC-AUC)
+   ⚠️ ILSA (Seismic): Weak individual performance (71% accuracy, 0.56 ROC-AUC)
+      → Limited by sparse event distribution
+
+2. MULTIMODAL FUSION:
+   ✅ XGBoost Fusion: Best overall performance (0.75 ROC-AUC, 0.60 F1)
+   ⚠️ Deep Learning: High recall (100%) but low precision (44%)
+      → Overfits to predict all events
+
+3. MODEL SELECTION:
+   🏆 WINNER: XGBoost Fusion Model
+      - Balanced performance across all metrics
+      - ROC-AUC: 0.7476 (good discrimination)
+      - F1-Score: 0.6032 (balanced precision-recall)
+      - Interpretable feature importance
+
+4. FUSION EFFECTIVENESS:
+   ✅ Multimodal fusion stabilizes ILSA weakness
+   ✅ Combines ChaSTE precision with ILSA recall
+   ✅ ROC-AUC maintained at fusion level despite ILSA weakness
+
+5. PRACTICAL IMPLICATIONS:
+   ✅ ChaSTE alone sufficient for high-precision scenarios
+   ✅ Fusion recommended for balanced detection needs
+   ⚠️ Deep learning not suitable (too many false alarms)

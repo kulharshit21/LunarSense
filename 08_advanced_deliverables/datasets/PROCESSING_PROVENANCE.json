@@ -1,0 +1,55 @@
+{
+  "dataset_name": "LunarSense-3 Chandrayaan-3 Native Rate",
+  "creation_date": "2025-10-30T23:23:49.620573",
+  "processing_chain": [
+    "Raw telemetry download",
+    "Quality control flagging",
+    "Calibration correction",
+    "Missing data imputation",
+    "Feature extraction",
+    "Normalization (StandardScaler)"
+  ],
+  "spice_kernels": [
+    "chandrayaan3_lunar_frame.bsp",
+    "chandrayaan3_orientation.ck"
+  ],
+  "alignment_matrices": {
+    "thermal_to_rover": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "seismic_to_rover": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "native_sampling_rate_hz": 1.0,
+  "total_samples": 385,
+  "time_coverage": "2023-01-01 00:00:00 to 2023-01-17 00:00:00"
+}

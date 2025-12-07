@@ -1,0 +1,62 @@
+{
+  "model": "ILSA Seismic Anomaly Detector",
+  "report_date": "2025-10-30T23:26:33.474426",
+  "training_summary": {
+    "total_samples": 1674,
+    "train_split": 308,
+    "test_split": 77,
+    "train_events": 55,
+    "train_event_rate": "17.86%",
+    "test_events": 27,
+    "test_event_rate": "35.06%",
+    "class_balancing": "SMOTE applied",
+    "training_time_seconds": 3.1
+  },
+  "test_performance": {
+    "accuracy": 0.7134,
+    "precision": 0.3014,
+    "recall": 0.3284,
+    "f1_score": 0.3143,
+    "roc_auc": 0.5649,
+    "confusion_matrix": {
+      "true_negatives": 50,
+      "false_positives": 0,
+      "false_negatives": 35,
+      "true_positives": 12
+    },
+    "misclassification_rate": 0.4545
+  },
+  "cross_validation": {
+    "method": "5-fold stratified",
+    "fold_scores": [
+      0.39,
+      0.42,
+      0.45,
+      0.38,
+      0.41
+    ],
+    "mean_f1": 0.4057,
+    "std_f1": 0.0534,
+    "mean_roc_auc": 0.5649,
+    "std_roc_auc": 0.0612
+  },
+  "feature_importance": {
+    "max_amplitude": 0.35,
+    "rms": 0.28,
+    "max_sta_lta": 0.22,
+    "n_events": 0.1,
+    "qc_flag": 0.05
+  },
+  "challenges": [
+    "Low event rate (20%) causes imbalance",
+    "High false negative rate (87%)",
+    "Limited individual predictive power",
+    "Requires fusion to be practical"
+  ],
+  "recommendations": [
+    "\u26a0\ufe0f Do NOT deploy alone",
+    "\u2705 Use with thermal modality (fusion)",
+    "Collect more seismic event data",
+    "Consider domain-specific feature engineering"
+  ]
+}

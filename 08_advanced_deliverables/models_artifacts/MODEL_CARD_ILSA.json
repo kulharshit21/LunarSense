@@ -1,0 +1,73 @@
+{
+  "model_details": {
+    "name": "ILSA Seismic Anomaly Detector",
+    "version": "1.0.0",
+    "release_date": "2025-10-30",
+    "architecture": "Random Forest (200 estimators) + SMOTE",
+    "framework": "scikit-learn + imbalanced-learn",
+    "input_shape": [
+      null,
+      5
+    ],
+    "output_shape": [
+      null,
+      2
+    ]
+  },
+  "intended_use": {
+    "primary_use": "Detect seismic anomalies in Chandrayaan-3 ILSA telemetry",
+    "domain": "Lunar exploration, seismic monitoring",
+    "tasks": [
+      "Binary classification",
+      "Event scoring"
+    ],
+    "out_of_scope": [
+      "Earthquake magnitude estimation",
+      "Seismic wave classification"
+    ]
+  },
+  "factors": {
+    "relevant_factors": [
+      "Moonquake magnitude",
+      "Distance from sensor",
+      "Subsurface composition"
+    ],
+    "evaluation_factors": [
+      "Data quality",
+      "Ambient noise levels"
+    ],
+    "limitations": [
+      "Lower individual performance (ROC-AUC: 0.56)",
+      "Limited event samples in training data",
+      "Performs better with multimodal fusion",
+      "Requires balanced class handling (SMOTE)"
+    ]
+  },
+  "metrics": {
+    "test_accuracy": 0.7134,
+    "test_precision": 0.3014,
+    "test_recall": 0.3284,
+    "test_f1": 0.3143,
+    "test_roc_auc": 0.5649,
+    "cv_f1_mean": 0.4057,
+    "cv_f1_std": 0.0534
+  },
+  "training_data": {
+    "dataset": "Chandrayaan-3 ILSA L1B Products",
+    "samples": 1674,
+    "features": 5,
+    "event_rate": "20.07%",
+    "preprocessing": "StandardScaler + SMOTE oversampling"
+  },
+  "model_artifacts": {
+    "checkpoint": "ilsa_baseline_rf.pkl",
+    "scaler": "feature_scalers.pkl (ilsa)",
+    "config": "ilsa_baseline_config.json"
+  },
+  "recommendations": [
+    "Use with multimodal fusion for better performance",
+    "Consider increasing training data for improved recall",
+    "Monitor false positive rate in operations"
+  ],
+  "model_card_contact": "research@lunarsense.org"
+}
